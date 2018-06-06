@@ -26,7 +26,18 @@ class MainPage(webapp2.RequestHandler):
         main_template = the_jinja_env.get_template('templates/index.html')
         self.response.write(main_template.render())
 
+class UpdateProfilePage(webapp2.RequestHandler):
+    def get(self):
+        profile_template = the_jinja_env.get_template('templates/profile.html')
+        self.response.write(profile_template.render())
+
+class SeeProfilesPage(webapp2.RequestHandler):
+    def get(self):
+        profiles_template = the_jinja_env.get_template('templates/view_profiles.html')
+        self.response.write(profiles_template.render())
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
+    ('/updateprofile', UpdateProfilePage),
+    ('/profiles', SeeProfilesPage),
 ], debug=True)

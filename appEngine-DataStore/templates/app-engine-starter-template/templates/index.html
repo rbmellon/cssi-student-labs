@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <title>Dietary Dating App</title>
+	<link rel="stylesheet" type="text/css" href="app-stylesheets/style.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>Dietary Dating App</h1>
+	<div><p>Welcome to our site! We know how difficult it can be to find a partner in crime with whom you can also dine. To that end, our goal is to help those with restrictive diets or allergies to find a mate. Because when you eat together, magic happens!</p></div>
+	
+	<!-- add link to other pages -->
+	<section>
+	<h2>My Profile</h2>
+	<p>Name: {{ my_name }} </p>
+	<p>Gender: {{ my_gender }} </p>
+	<p>Dietary Restrictions:
+	  <ul>
+        <li>{{ my_restriction }}</li>
+	  </ul>
+	</p>
+	</section>
   </body>
 </html>

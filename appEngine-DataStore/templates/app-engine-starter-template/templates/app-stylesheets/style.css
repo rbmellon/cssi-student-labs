@@ -1,0 +1,26 @@
+body {
+	background-color: paleturquoise;
+}
+
+.profile {
+	border: solid;	
+	display: flex;
+	padding: 0px 40px;
+}
+
+.namecard {
+	padding: 0px 40px;
+}
+
+.dietrestriction {
+	margin-left: 100px;
+}
+
+h3 {
+	font-size: 38pt;
+}
+
+h4 {
+	font-size: 14pt;
+}
+
